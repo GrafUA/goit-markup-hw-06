@@ -569,7 +569,8 @@ img {
 
 .subscribe {
  display: flex;
- align-items: center;
+ align-items: flex-end;
+ /* justify-content: flex-end; */
 }
 
 
@@ -590,7 +591,7 @@ img {
 
 .modal-subscribe {
 width: 100%;
-height: 50px;
+height: 45px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
@@ -600,10 +601,10 @@ font-size: 16px;
 line-height: 20px;
 padding-left: 15px;
 margin-top: 20px;
+color: #FFFFFF;
 }
 
 .subscribe-btn {
-  margin-top: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -642,8 +643,8 @@ margin-top: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 448px;
+  min-height: 401px;
   background-color: #FFFFFF;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
@@ -790,8 +791,6 @@ margin-top: 20px;
   width: 16px;
   height: 15px;
 
-  outline: 2px solid transparent;
-  outline-offset: -2px;
   border: 2px solid #212121;
   border-radius: 2px;
 
@@ -804,7 +803,7 @@ margin-top: 20px;
 }
 
 .modal-form-checkbox:checked {
-  outline-color: #2196F3;
+  border-color: #2196F3;
   background-color: #2196F3;
   background-size: 16px 15px;
   
@@ -813,6 +812,11 @@ margin-top: 20px;
 .modal-form-btn {
   display: block;
   margin: 0 auto;
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background: #188CE8;
 }
 
 /* portfolio */
