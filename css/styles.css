@@ -819,6 +819,11 @@ color: #FFFFFF;
   background: #188CE8;
 }
 
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+  fill: #2196F3;
+}
+
 /* portfolio */
 
 .filter {
